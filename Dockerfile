@@ -1,4 +1,4 @@
-"# Use official lightweight Python image
+# Use official lightweight Python image
 FROM python:3.9-slim
 
 # Set working directory
@@ -17,7 +17,7 @@ EXPOSE 5000
 
 
 # If it's Flask, instead use:
-CMD [""python"", ""app.py""]
+CMD ["python", "app.py"]
 
 # If it's FastAPI with uvicorn:
-# CMD [""uvicorn"", ""main:app"", ""--host"", ""0.0.0.0"", ""--port"", ""8000""]"
+# CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]
